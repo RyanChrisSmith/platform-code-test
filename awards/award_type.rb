@@ -11,5 +11,7 @@ class AwardType
 
   private
 
-  def update_attributes; end
+  def update_attributes
+    raise NotImplementedError, 'Implement this method in a child class'
+  end
 end
