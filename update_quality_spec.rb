@@ -15,7 +15,7 @@ describe '#update_quality' do
       end
 
       context 'given a normal award' do
-        let(:name) { 'NORMAL ITEM' }
+        let(:name) { 'NORMAL' }
 
         before do
           # Verify that this is always true in the current context
@@ -221,7 +221,7 @@ describe '#update_quality' do
   context 'Given several award' do
     let(:awards) {
       [
-        Award.new('NORMAL ITEM', 5, 10),
+        Award.new('NORMAL', 5, 10),
         Award.new('Blue First', 3, 10),
       ]
     }
